@@ -4,6 +4,13 @@ import pandas as pd
 import os
 import glob
 
+"""
+TODO:
+Fix single quotes not parsing correctly.
+Add private messaging capabilities.
+???
+"""
+
 
 def create_bot():
     intents = discord.Intents.default()
@@ -20,10 +27,6 @@ roles['Difficulty'] = roles['Difficulty'].astype(str).replace("nan","")
 working_script = roles
 script_name = "Roles"
 
-# @bot.command()
-# async def hello(ctx, *args):
-#
-#     await ctx.send(f"Hello! Argument = {type(args)}")
 
 
 def load_whitelist():
@@ -35,14 +38,19 @@ whitelist = load_whitelist()
 def is_whitelisted(user_id):
     return user_id in whitelist
 
-@bot.command()
+@bot.command(
+    hidden=True
+)
 async def test_admin(ctx):
     if is_whitelisted(ctx.author.id):
         await ctx.send('Valid User')
     else:
         await ctx.send('Invalid User')
 
-@bot.command()
+@bot.command(
+    help="Loads a script to be the active script.\nExample syntax: $load 'Starter Script.'",
+    brief="Loads a script to be the active script."
+)
 async def load(ctx, script):
     global working_script, script_name
     script_name = script
@@ -51,13 +59,19 @@ async def load(ctx, script):
         working_script['Difficulty'] = working_script['Difficulty'].astype(str).replace("nan", "")
         await ctx.send(f"Loaded script: {script_name}")
     except Exception:
-        await ctx.send(f"Failed to load script: {script_name}\nExample syntax: $load 'Starter Script'")
+        await ctx.send(f"Failed to load script: {script_name}\nThis command is case sensitive.")
 
-@bot.command()
+@bot.command(
+    help="Returns what the current active script is.\nExample syntax: $current 'Starter Script.",
+    brief="Returns what the current active script is."
+)
 async def current(ctx):
     await ctx.send(f"Current script: {script_name}")
 
-@bot.command()
+@bot.command(
+    help="Makes a glossary given the current active script.",
+    brief="Makes a glossary given the current active script."
+)
 async def glossary(ctx):
     await ctx.send(f"# **{script_name}{working_script['Difficulty'].max()} - Specific Roles Glossary**")
     groups = working_script.groupby('Alignment', sort=False)
@@ -73,7 +87,10 @@ async def glossary(ctx):
             message += f"**{role.Role}{role.Difficulty}** {role.Description}\n"
         await ctx.send(message)
 
-@bot.command()
+@bot.command(
+    help="Makes an outline given the current active script.",
+    brief="Makes an outline given the current active script."
+)
 async def outline(ctx):
     await ctx.send(f"# **{script_name}{working_script['Difficulty'].max()} - Outline**")
     groups = working_script.groupby('Alignment', sort=False)
@@ -89,7 +106,10 @@ async def outline(ctx):
             message += f"**{role.Role}{role.Difficulty}**\n"
         await ctx.send(message)
 
-@bot.command()
+@bot.command(
+    help="Make a new script.\nThe script name is case sensitive, role names are not.\nExample syntax: $new 'New Script.' 'artist' 'drunk' 'poisoner' 'imp' 'scarlet woman'",
+    brief="Makes a new script."
+)
 async def new(ctx, script, *args):
     global working_script, script_name
     # Tamper prevention
@@ -103,7 +123,10 @@ async def new(ctx, script, *args):
         working_script.to_csv(f"./data/{script}.csv", index=False, header=True)
         await ctx.send(f"Created new script: {script_name}")
 
-@bot.command()
+@bot.command(
+    help="Edits an existing script.\nThe script name is case sensitive, role names are not.\nListing a role in the script will remove it, listing a role not in the script will add it\nExample syntax: $new 'New Script' 'prisdelo' 'scarlet woman'",
+    brief="Edits an existing script."
+)
 async def edit(ctx, *args):
     global working_script
     # Tamper prevention
@@ -114,21 +137,20 @@ async def edit(ctx, *args):
     else:
         args = [arg.title() for arg in args]
         current_roles = list(working_script['Role'])
-        print(current_roles)
         for arg in args:
-            print(arg)
-            print(current_roles)
             if arg in current_roles:
                 current_roles.remove(arg)
             elif arg not in current_roles:
                 current_roles.append(arg)
-        print(current_roles)
         # Generate script file
         working_script = roles[roles['Role'].isin(current_roles)]
         working_script.to_csv(f"./data/{script_name}.csv", index=False, header=True)
         await ctx.send(f"Updated script: {script_name}")
 
-@bot.command()
+@bot.command(
+    help="List all scripts.\nThe Roles script does not allow for all functionality.",
+    brief="List all scripts."
+)
 async def scripts(ctx):
     await ctx.send("Fetching scripts...")
     data_folder = "data"
