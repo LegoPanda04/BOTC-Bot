@@ -1,5 +1,3 @@
-from logging import exception
-
 from discord.ext import commands
 import discord
 import pandas as pd
@@ -26,6 +24,23 @@ script_name = "Roles"
 # async def hello(ctx, *args):
 #
 #     await ctx.send(f"Hello! Argument = {type(args)}")
+
+
+def load_whitelist():
+    with open('whitelist.txt') as f:
+        return {int(line.strip()) for line in f.readlines()}
+
+whitelist = load_whitelist()
+
+def is_whitelisted(user_id):
+    return user_id in whitelist
+
+@bot.command()
+async def test_admin(ctx):
+    if is_whitelisted(ctx.author.id):
+        await ctx.send('Valid User')
+    else:
+        await ctx.send('Invalid User')
 
 @bot.command()
 async def load(ctx, script):
@@ -78,12 +93,40 @@ async def outline(ctx):
 async def new(ctx, script, *args):
     global working_script, script_name
     # Tamper prevention
-    if script == "Roles":
+    if not is_whitelisted(ctx.author.id):
+        await ctx.send("Sorry, but you are not allowed to use this command.")
+    elif script == "Roles":
         await ctx.send("Sorry, but you can not modify the master role list!")
     else:
         script_name = script
         working_script = roles[roles['Role'].isin([arg.title() for arg in args])]
+        working_script.to_csv(f"./data/{script}.csv", index=False, header=True)
         await ctx.send(f"Created new script: {script_name}")
+
+@bot.command()
+async def edit(ctx, *args):
+    global working_script
+    # Tamper prevention
+    if not is_whitelisted(ctx.author.id):
+        await ctx.send("Sorry, but you are not allowed to use this command.")
+    elif script_name == "Roles":
+        await ctx.send("Sorry, but you can not modify the master role list!")
+    else:
+        args = [arg.title() for arg in args]
+        current_roles = list(working_script['Role'])
+        print(current_roles)
+        for arg in args:
+            print(arg)
+            print(current_roles)
+            if arg in current_roles:
+                current_roles.remove(arg)
+            elif arg not in current_roles:
+                current_roles.append(arg)
+        print(current_roles)
+        # Generate script file
+        working_script = roles[roles['Role'].isin(current_roles)]
+        working_script.to_csv(f"./data/{script_name}.csv", index=False, header=True)
+        await ctx.send(f"Updated script: {script_name}")
 
 @bot.command()
 async def scripts(ctx):
