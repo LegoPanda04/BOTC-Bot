@@ -1,0 +1,26 @@
+Role,Description,Alignment,Difficulty
+Artist,"Privately, during the day, you may return home to ask the storyteller any one yes or no question",Town,
+Balloonist,"Nightly, learn the name of a living player of a different type from (demon, minion, outsider, or town) than last night. There might be +1 outsider",Town,*
+Flower Girl,"Nightly, learn if the demon voted that day",Town,
+Investigator,Start knowing 1 of 2 people is a specific minion,Town,
+Magician,"The minion is told that either you or the demon is their demon, and the demon is told that either you or the minion is their minion",Town,*
+Mayor,"If nobody is executed in the final 3, town wins. When you are attacked, another town may die instead",Town,
+Monk,"Nightly, choose someone to protect from the demon",Town,
+Noble,"Start with a list of 2 good players and 1 evil, you don't know which is which",Town,
+Prophet,"If a team has not yet won 3 days after your death, you return to life and cannot be killed again by the same method",Town,
+Sailor,"You can't die. Nightly, choose a living player, who is told they were visited by the Sailor. You or they are drunk until the start of the next night",Town,*
+Soldier,Cannot be killed by the demon at night,Town,
+Tea Lady,"If both of your living neighbors are good, neither can die",Town,
+Drunk,"You think you are a specific town role that is not in play, but your ability doesn’t work",Outsider,
+Moleman,"Each night, choose three living players (before anyone dies that night). If one is executed the following day, one of the other two, if alive, will be instead",Outsider,*
+Ogre,"On the first night, pick a player. You are their alignment for the rest of the game, but are not told what that alignment is",Outsider,*
+Recluse,"May register as some manner of evil to other role abilities, even after dying",Outsider,
+Sweetheart,"When you die, a player becomes a drunk for the rest of the game",Outsider,
+Baron,+2 Outsiders,Minion,
+Poisoner,"Nightly, poison 1 player until the next night begins",Minion,
+Scarlet Woman,"If the demon dies when there are 5 or more people alive, you become the demon",Minion,
+Spy,"Nightly, learn all roles. You may appear as good to role abilities",Minion,
+Witch,"Nightly, choose a player. If they nominate someone, they die. This ability is disabled the moment 3 or less people remain alive",Minion,
+Fang Gu,"Nightly, choose a living player to die. The first time per game an outsider is killed like this, the original Fang Gu dies and the targeted outsider becomes the new Fang Gu. +1 Outsider instead of town",Demon,
+Ojo,"Nightly, choose a role. If a player with that role exists, they die. If nobody has the role, the storyteller decides who dies",Demon,
+Prisdelo,"Nightly, choose 3 living players. Each is informed that they have been selected. Each must individually choose whether to live or die. If all choose to live, all die",Demon,*
