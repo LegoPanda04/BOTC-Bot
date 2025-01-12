@@ -1,7 +1,10 @@
+from logging import exception
+
 from discord.ext import commands
 import discord
 import pandas as pd
-from pandas.util import capitalize_first_letter
+import os
+import glob
 
 
 def create_bot():
@@ -28,9 +31,12 @@ script_name = "Roles"
 async def load(ctx, script):
     global working_script, script_name
     script_name = script
-    working_script = pd.read_csv(f"./data/{script}.csv")
-    working_script['Difficulty'] = working_script['Difficulty'].astype(str).replace("nan", "")
-    await ctx.send(f"Loaded script: {script_name}")
+    try:
+        working_script = pd.read_csv(f"./data/{script}.csv")
+        working_script['Difficulty'] = working_script['Difficulty'].astype(str).replace("nan", "")
+        await ctx.send(f"Loaded script: {script_name}")
+    except Exception:
+        await ctx.send(f"Failed to load script: {script_name}\nExample syntax: $load 'Starter Script'")
 
 @bot.command()
 async def current(ctx):
@@ -38,12 +44,12 @@ async def current(ctx):
 
 @bot.command()
 async def glossary(ctx):
-    await ctx.send(f"# **{script_name} - Specific Roles Glossary**")
+    await ctx.send(f"# **{script_name}{working_script['Difficulty'].max()} - Specific Roles Glossary**")
     groups = working_script.groupby('Alignment', sort=False)
     for name, group in groups:
         message = ""
-        message += "\n"
-        message += f"# **{name}**\n"
+        # message += "\n"
+        message += f"## **{name}**\n"
         for role in group.itertuples():
             # Length check
             if len(message + f"**{role.Role}{role.Difficulty}** {role.Description}\n") >= 2000:
@@ -54,12 +60,12 @@ async def glossary(ctx):
 
 @bot.command()
 async def outline(ctx):
-    await ctx.send(f"# **{script_name}** - Outline")
+    await ctx.send(f"# **{script_name}{working_script['Difficulty'].max()} - Outline**")
     groups = working_script.groupby('Alignment', sort=False)
     for name, group in groups:
         message = ""
-        message += "\n"
-        message += f"# **{name}**\n"
+        # message += "\n"
+        message += f"## **{name}**\n"
         for role in group.itertuples():
             # Length check
             if len(message + f"**{role.Role}{role.Difficulty}**\n") >= 2000:
@@ -71,9 +77,27 @@ async def outline(ctx):
 @bot.command()
 async def new(ctx, script, *args):
     global working_script, script_name
-    script_name = script
-    working_script = roles[roles['Role'].isin([arg.title() for arg in args])]
-    await ctx.send(f"Created new script: {script_name}")
+    # Tamper prevention
+    if script == "Roles":
+        await ctx.send("Sorry, but you can not modify the master role list!")
+    else:
+        script_name = script
+        working_script = roles[roles['Role'].isin([arg.title() for arg in args])]
+        await ctx.send(f"Created new script: {script_name}")
+
+@bot.command()
+async def scripts(ctx):
+    await ctx.send("Fetching scripts...")
+    data_folder = "data"
+
+    # Fetch all CSV file names in the folder
+    csv_files = glob.glob(os.path.join(data_folder, "*.csv"))
+
+    # Add each file name
+    message = ""
+    for file in csv_files:
+        message += f"*{os.path.splitext(os.path.basename(file))[0]}*\n"
+    await ctx.send(message)
 
 
 
