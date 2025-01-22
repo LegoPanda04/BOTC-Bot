@@ -131,7 +131,7 @@ async def new(ctx, script, *args):
         await ctx.send(f"Created new script: {script_name}")
 
 @bot.command(
-    help="Edits an existing script.\nThe script name is case sensitive, role names are not.\nListing a role in the script will remove it, listing a role not in the script will add it\nExample syntax: $new \"New Script\" \"prisdelo\" \"scarlet woman\"",
+    help="Edits an existing script.\nThe script name is case sensitive, role names are not.\nListing a role in the script will remove it, listing a role not in the script will add it\nExample syntax: $edit \"prisdelo\" \"scarlet woman\"",
     brief="Edits an existing script."
 )
 async def edit(ctx, *args):
