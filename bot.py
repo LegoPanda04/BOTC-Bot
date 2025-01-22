@@ -6,8 +6,16 @@ import glob
 
 """
 TODO:
-Fix single quotes not parsing correctly.
 Add private messaging capabilities.
+
+Lynn Ideas:
+Bingo Bob (Demon) At the start of the game you are given a bingo board sheet. 
+Bingo bob cannot kill and evil wins if the board is done. This is a freddy type role. 
+Everyone can see the blank version of the bingo role which updates nightly. 
+Everyone will also have a list of possible points (30-35).
+
+Ash Ideas:
+Vampire (Demon) There is no minion. The first two people you kill become evil, and know they are evil.
 ???
 """
 
@@ -48,7 +56,7 @@ async def test_admin(ctx):
         await ctx.send('Invalid User')
 
 @bot.command(
-    help="Loads a script to be the active script.\nExample syntax: $load 'Starter Script.'",
+    help="Loads a script to be the active script.\nExample syntax: $load \"Starter Script.\"",
     brief="Loads a script to be the active script."
 )
 async def load(ctx, script):
@@ -62,7 +70,7 @@ async def load(ctx, script):
         await ctx.send(f"Failed to load script: {script_name}\nThis command is case sensitive.")
 
 @bot.command(
-    help="Returns what the current active script is.\nExample syntax: $current 'Starter Script.",
+    help="Returns what the current active script is.",
     brief="Returns what the current active script is."
 )
 async def current(ctx):
@@ -77,7 +85,6 @@ async def glossary(ctx):
     groups = working_script.groupby('Alignment', sort=False)
     for name, group in groups:
         message = ""
-        # message += "\n"
         message += f"## **{name}**\n"
         for role in group.itertuples():
             # Length check
@@ -96,18 +103,18 @@ async def outline(ctx):
     groups = working_script.groupby('Alignment', sort=False)
     for name, group in groups:
         message = ""
-        # message += "\n"
         message += f"## **{name}**\n"
         for role in group.itertuples():
             # Length check
-            if len(message + f"**{role.Role}{role.Difficulty}**\n") >= 2000:
+            if len(message + f"{role.Role}, ") >= 2000:
                 await ctx.send(message)
                 message = ""
-            message += f"**{role.Role}{role.Difficulty}**\n"
+            message += f"{role.Role}, "
+        message = message[:-2] # Remove last two characters
         await ctx.send(message)
 
 @bot.command(
-    help="Make a new script.\nThe script name is case sensitive, role names are not.\nExample syntax: $new 'New Script.' 'artist' 'drunk' 'poisoner' 'imp' 'scarlet woman'",
+    help="Make a new script.\nThe script name is case sensitive, role names are not.\nExample syntax: $new \"New Script\" \"artist\" \"drunk\" \"poisoner\" \"imp\" \"scarlet woman\"",
     brief="Makes a new script."
 )
 async def new(ctx, script, *args):
@@ -124,7 +131,7 @@ async def new(ctx, script, *args):
         await ctx.send(f"Created new script: {script_name}")
 
 @bot.command(
-    help="Edits an existing script.\nThe script name is case sensitive, role names are not.\nListing a role in the script will remove it, listing a role not in the script will add it\nExample syntax: $new 'New Script' 'prisdelo' 'scarlet woman'",
+    help="Edits an existing script.\nThe script name is case sensitive, role names are not.\nListing a role in the script will remove it, listing a role not in the script will add it\nExample syntax: $new \"New Script\" \"prisdelo\" \"scarlet woman\"",
     brief="Edits an existing script."
 )
 async def edit(ctx, *args):

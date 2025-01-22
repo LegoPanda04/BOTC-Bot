@@ -6,21 +6,21 @@ Dreamer,"Nightly, choose a player. You learn 1 good and 1 evil role they might b
 Empath,Nightly learn how many of your 2 closest neighbors are evil,Town,
 Fortune Teller,"Nightly, check 2 people and learn if the demon is among them. 1 person in the game will register as a red herring",Town,
 Librarian,Start knowing 1 of 2 people is a specific outsider,Town,
-Monk,"Nightly, choose someone to protect from the demon",Town,
 Noble,"Start with a list of 2 good players and 1 evil, you don't know which is which",Town,
 Oracle,"Nightly, learn how many dead people are evil",Town,
 Sailor,"You can't die. Nightly, choose a living player, who is told they were visited by the Sailor. You or they are drunk until the start of the next night",Town,*
 Seamstress,"Once per game, you may check if 2 people are on same team at night",Town,
 Slayer,"Once per game, during the town meeting, attempt to kill another player; they die if they’re the demon",Town,
 Soldier,Cannot be killed by the demon at night,Town,
-Drunk,"You think you are a specific town role that is not in play, but your ability doesn’t work",Outsider,
+Tea Lady,"If both of your living neighbors are good, neither can die",Town,
+Gangster,"If you and a neighbor agree to kill your other neighbor, and tell the storyteller in town square during discussion time, that agreed-upon other neighbor will die during the night. If the Gangster gets both to agree to kill the other, they choose which will actually die at night",Outsider,*
+Golem,"You may only nominate once. When you do so, if the player you nominated isnt the demon, they instantly die",Outsider,*
 Lunatic,You think you are a specific demon; the actual demon knows who you choose to try to kill,Outsider,
 Ogre,"On the first night, pick a player. You are their alignment for the rest of the game, but are not told what that alignment is",Outsider,*
-Politician,"If you are the most influential in good losing, become and win with evil",Outsider,**
 Recluse,"May register as some manner of evil to other role abilities, even after dying",Outsider,
-Baron,+2 Outsiders,Minion,
 Marionette,"You think you are a specific town or outsider role that is not in play, but your ability doesn’t work and you’re actually a minion. You will always neighbor the demon",Minion,
 Poisoner,"Nightly, poison 1 player until the next night begins",Minion,
+Scarlet Woman,"If the demon dies when there are 5 or more people alive, you become the demon",Minion,
 Spy,"Nightly, learn all roles. You may appear as good to role abilities",Minion,
 Fang Gu,"Nightly, choose a living player to die. The first time per game an outsider is killed like this, the original Fang Gu dies and the targeted outsider becomes the new Fang Gu. +1 Outsider instead of town",Demon,
 Imp,"Nightly, choose a living player to die. If you kill yourself like this, your minion becomes an Imp",Demon,
