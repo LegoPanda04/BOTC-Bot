@@ -1,0 +1,28 @@
+Role,Description,Alignment,Difficulty
+Artist,"Privately, during the day, you may return home to ask the storyteller any one yes or no question",Town,
+Cannibal,"Gain the ability of the last executed person. If they were evil, you are poisoned until a good player is executed",Town,
+Chef,Start knowing if the evil players are adjacent to each other.,Town,
+Ferryman,"If you are alive in the final 3, all ghost votes are refreshed",Town,\*
+Fool,"First time you die, don’t",Town,
+Fortune Teller,"Nightly, check 2 people and learn if the demon is among them. 1 person in the game will register as a red herring",Town,
+Gambler,"Nightly, you may choose to guess someone’s role. If you are wrong, you die",Town,
+Gossip,"Each day, you may publicly declare a rumor. If the rumor is true, someone will die during the night",Town,\*
+Grandmother,Start knowing 1 person is a specific good role; if they die from the demon you die too,Town,
+Investigator,Start knowing 1 of 2 people is a specific minion,Town,
+Mayor,"If nobody is executed in the final 3, town wins. When you are attacked, another town may die instead",Town,
+Noble,"Start with a list of 2 good players and 1 evil, you don't know which is which",Town,
+Prophet,"If a team has not yet won 3 days after your death, you return to life and cannot be killed again by the same method",Town,
+Ravenkeeper,"If you die during the night, choose a player to learn the role of",Town,
+Seamstress,"Once per game, you may check if 2 people are on same team at night",Town,
+Drunk,"You think you are a specific town role that is not in play, but your ability doesn’t work",Outsider,
+Saint,"If you’re executed by the town, evil wins",Outsider,
+Sweetheart,"When you die, a player becomes a drunk for the rest of the game",Outsider,
+Voudon,"Once there are two or more dead players, the following effects occur: Ghost votes become unlimited, only the voudon and dead players may vote, and the 'marked for execution' threshold becomes 1. Once killed, all three effects are undone and you do not recieve a ghost vote",Outsider,\*\*
+Marionette,"You think you are a specific town or outsider role that is not in play, but your ability doesn’t work and you’re actually a minion. You will always neighbor the demon",Minion,
+Summoner,"You gain 3 bluffs. On night 2, turn a player of your choice into a demon of your choice from the active script who acts immediately. There is no demon at the start of the game.",Minion,\*
+Witch,"Nightly, choose a player. If they nominate someone, they die. This ability is disabled the moment 3 or less people remain alive",Minion,
+Wizard,"Once per game, at any time, declare a wish to the storyteller. The wish can be any request, but most come with a cost and leave a hint as to their nature.",Minion,\*\*\*
+Alastor,"Each night, select a living player to die. Start the game knowing one good player is marked as your target. You may not kill your target directly, but once they die you can select an additional living player to die each night.",Demon,\*
+Freddy,"All players are told that Freddy is free. After 5 nights, evil wins. If more than 1 good player is executed, evil wins. Freddy does not kill any players during the night",Demon,\*\*
+Imp,"Nightly, choose a living player to die. If you kill yourself like this, your minion becomes an Imp",Demon,
+Yaggababble,"When the game begins, you are informed of a secret phrase. Any time you publicly say the phrase, a player may die that night, up to a maximum of 3 (diminishing returns after first time spoken)",Demon,\*\*

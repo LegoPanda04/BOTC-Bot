@@ -1,0 +1,28 @@
+Role,Description,Alignment,Difficulty
+Artist,"Privately, during the day, you may return home to ask the storyteller any one yes or no question",Town,
+Balloonist,"Nightly, learn the name of a living player of a different type from (demon, minion, outsider, or town) than last night. There might be +1 outsider",Town,\*
+Flower Girl,"Nightly, learn if the demon voted that day",Town,
+Fool,"First time you die, don’t",Town,
+Gambler,"Nightly, you may choose to guess someone’s role. If you are wrong, you die",Town,
+Investigator,Start knowing 1 of 2 people is a specific minion,Town,
+Lycanthrope,"At night, choose 1 living player. If they are innocent, they die, but the demon can't kill anyone else that night",Town,\*
+Magician,"The minion is told that either you or the demon is their demon, and the demon is told that either you or the minion is their minion",Town,\*
+Mayor,"If nobody is executed in the final 3, town wins. When you are attacked, another town may die instead",Town,
+Sailor,"You can't die. Nightly, choose a living player, who is told they were visited by the Sailor. You or they are drunk until the start of the next night",Town,\*
+Seamstress,"Once per game, you may check if 2 people are on same team at night",Town,
+Slayer,"Once per game, during the town meeting, attempt to kill another player; they die if they’re the demon",Town,
+Town Crier,"Nightly, learn if the minion nominated someone that day",Town,
+Undertaker,"Nightly, learn which role died by execution",Town,
+Butler,"Each night, choose a player to be your master. You cannot vote in favor of an execution unless your master does",Outsider,
+Drunk,"You think you are a specific town role that is not in play, but your ability doesn’t work",Outsider,
+Golem,"You may only nominate once. When you do so, if the player you nominated isnt the demon, they instantly die",Outsider,\*
+Lunatic,You think you are a specific demon; the actual demon knows who you choose to try to kill,Outsider,
+Yes Man,"In town square, you must always agree with what other players say or you will be executed immediately ",Outsider,\*
+Baron,+2 Outsiders,Minion,
+Evil Twin,"Start knowing a specific town and their role. They know that you are their Evil Twin. If the town twin is executed, evil wins. Good cannot win while both are alive",Minion,\*
+Marionette,"You think you are a specific town or outsider role that is not in play, but your ability doesn’t work and you’re actually a minion. You will always neighbor the demon",Minion,
+Mezepheles,"Start knowing a secret word. The first good player who says the secret word to the storyteller at any time, public or private, turns evil that night. The Mezepheles does not learn if someone has been converted, but the converted player does",Minion,\*
+Alastor,"Each night, select a living player to die. Start the game knowing one good player is marked as your target. You may not kill your target directly, but once they die you can select an additional living player to die each night.",Demon,\*
+Fang Gu,"Nightly, choose a living player to die. The first time per game an outsider is killed like this, the original Fang Gu dies and the targeted outsider becomes the new Fang Gu. +1 Outsider instead of town",Demon,
+Freddy,"All players are told that Freddy is free. After 5 nights, evil wins. If more than 1 good player is executed, evil wins. Freddy does not kill any players during the night",Demon,\*\*
+Imp,"Nightly, choose a living player to die. If you kill yourself like this, your minion becomes an Imp",Demon,

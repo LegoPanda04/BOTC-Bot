@@ -1,0 +1,28 @@
+Role,Description,Alignment,Difficulty
+Bounty Hunter,"Start knowing 1 evil player. If they die, learn a different evil player that night. +1 Minion, -1 Town",Town,\*\*
+Cannibal,"Gain the ability of the last executed person. If they were evil, you are poisoned until a good player is executed",Town,
+Dreamer,"Nightly, choose a player. You learn 1 good and 1 evil role they might be, one of which is correct",Town,
+Fisherman,"Once per game, you may go home during discussion to ask the storyteller for a founded piece of advice to help good win",Town,\*\*
+Fool,"First time you die, don’t",Town,
+Fortune Teller,"Nightly, check 2 people and learn if the demon is among them. 1 person in the game will register as a red herring",Town,
+Gambler,"Nightly, you may choose to guess someone’s role. If you are wrong, you die",Town,
+Librarian,Start knowing 1 of 2 people is a specific outsider,Town,
+Noble,"Start with a list of 2 good players and 1 evil, you don't know which is which",Town,
+Philosopher,"Once per game, at night, you may select a town role from the script to gain the ability of. If that role is in play, its player becomes drunk until the philosopher dies or stops being the philosopher",Town,\*
+Slayer,"Once per game, during the town meeting, attempt to kill another player; they die if they’re the demon",Town,
+Soldier,Cannot be killed by the demon at night,Town,
+Undertaker,"Nightly, learn which role died by execution",Town,
+Washerwoman,Start knowing 1 of 2 people is a specific town,Town,
+Drunk,"You think you are a specific town role that is not in play, but your ability doesn’t work",Outsider,
+Heretic,"Whichever side wins, loses, and vice-versa. This effect persists even once you die",Outsider,\*\*
+Husk,"You do not count as a living player, and cannot die. Your vote does not count. ",Outsider,\*
+Yes Man,"In town square, you must always agree with what other players say or you will be executed immediately ",Outsider,\*
+Apopsis,"Start telling the Storyteller a secret phrase. The first time you say this phrase to the storyteller, if there are 4 or more living players, the day will end within 10 seconds.",Minion,\*
+Baron,+2 Outsiders,Minion,
+Goblin,"If you publicly announce that they are the goblin for the first time once nominated, and are executed that day, evil wins",Minion,\*
+Marionette,"You think you are a specific town or outsider role that is not in play, but your ability doesn’t work and you’re actually a minion. You will always neighbor the demon",Minion,
+Vampire Spawn,"Vampire Spawn can only be created mid-game by a vampire. You immediately learn who your demon is. Once per game, you may select a player and poison them for 2 days. The target is informed that they were poisoned.",Minion,\*
+Alastor,"Each night, select a living player to die. Start the game knowing one good player is marked as your target. You may not kill your target directly, but once they die you can select an additional living player to die each night.",Demon,\*
+Asmodeus,"Start the game with one specific good player as your 'Beloved'. You cannot die until your Beloved does. Each night, choose one or both of your Beloved's living neighbors to die, unless your Beloved died that day. Once your Beloved dies, your kills are random.",Demon,\*\*
+Patmos,"You have 4 abilities; you must choose one to activate each night: Death, War, Pestilence, Famine. Once all have been used, it is announced that evil wins at the end of the following day. Death: Choose 2 living players to die, this may only be used once. War: The following day, only one vote is required to mark for execution. A tie on that day executes all tied players. Pestilence: Poison all good players until the start of the next night. Famine: Private discussion is reduced to 3 minutes, there is no extra town discussion time after a nomination.",Demon,\*\*
+Vampire,"Start with no minions. Nightly, choose a living player to die. The first two players selected are turned evil and converted into vampire spawn",Demon,\*

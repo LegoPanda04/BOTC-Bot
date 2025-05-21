@@ -1,15 +1,10 @@
 Role,Description,Alignment,Difficulty
-Alchemist,You have a specified minion ability from the active script that is not in play.,Town,\*\*
 Artist,"Privately, during the day, you may return home to ask the storyteller any one yes or no question",Town,
-Atheist,"The storyteller can break the rules. If the storyteller is executed, good wins (If there isn’t an atheist, then evil wins if this happens). There are no evil players; everybody knows that demons aren’t real, idiot.",Town,\*\*\*
 Balloonist,"Nightly, learn the name of a living player of a different type from (demon, minion, outsider, or town) than last night. There might be +1 outsider",Town,\*
-Bodyguard,"Once per game, choose a player. For the rest of the game, if they would die, you die instead.",Town,
 Bounty Hunter,"Start knowing 1 evil player. If they die, learn a different evil player that night. +1 Minion, -1 Town",Town,\*\*
 Cannibal,"Gain the ability of the last executed person. If they were evil, you are poisoned until a good player is executed",Town,
-Chef,Start knowing if the evil players are adjacent to each other.,Town,
 Dreamer,"Nightly, choose a player. You learn 1 good and 1 evil role they might be, one of which is correct",Town,
 Empath,Nightly learn how many of your 2 closest neighbors are evil,Town,
-Ferryman,"If you are alive in the final 3, you can refresh all ghost votes once",Town,\*
 Fisherman,"Once per game, you may go home during discussion to ask the storyteller for a founded piece of advice to help good win",Town,\*\*
 Flower Girl,"Nightly, learn if the demon voted that day",Town,
 Fool,"First time you die, don’t",Town,
@@ -17,52 +12,35 @@ Fortune Teller,"Nightly, check 2 people and learn if the demon is among them. 1 
 Gambler,"Nightly, you may choose to guess someone’s role. If you are wrong, you die",Town,
 Gossip,"Each day, you may publicly declare a rumor. If the rumor is true, someone will die during the night",Town,\*
 Grandmother,Start knowing 1 person is a specific good role; if they die from the demon you die too,Town,
-Illusionist,"Demons and minions do not start knowing each other. When you die, demons and minions learn who each other are that night",Town,\*
 Investigator,Start knowing 1 of 2 people is a specific minion,Town,
 Librarian,Start knowing 1 of 2 people is a specific outsider,Town,
 Lycanthrope,"At night, choose 1 living player. If they are innocent, they die, but the demon can't kill anyone else that night",Town,\*
 Magician,"The minion is told that either you or the demon is their demon, and the demon is told that either you or the minion is their minion",Town,\*
 Mayor,"If nobody is executed in the final 3, town wins. When you are attacked, another town may die instead",Town,
 Monk,"Nightly, choose someone to protect from the demon",Town,
-Nightwatchmen,"Once per game, at night, one chosen player learns that you are the nightwatchmen",Town,
 Noble,"Start with a list of 2 good players and 1 evil, you don't know which is which",Town,
 Oracle,"Nightly, learn how many dead people are evil",Town,
-Phantom,Your ghost vote can be used up to 3 times instead of once,Town,
 Philosopher,"Once per game, at night, you may select a town role from the script to gain the ability of. If that role is in play, its player becomes drunk until the philosopher dies or stops being the philosopher",Town,\*
-Pixie,"Start knowing 1 in-play town role. If you act mad as that role, and the player with that role dies, you gain that role ability",Town,\*
-Prophet,"If a team has not yet won 3 days after your death, you return to life and cannot be killed again by the same method",Town,
 Ravenkeeper,"If you die during the night, choose a player to learn the role of",Town,
 Sailor,"You can't die. Nightly, choose a living player, who is told they were visited by the Sailor. You or they are drunk until the start of the next night",Town,\*
 Seamstress,"Once per game, you may check if 2 people are on same team at night",Town,
-Seductress,"Start choosing one player. If you would die, they do instead. The chosen player learns that they were ""seduced"", but not by who.",Town,\*
 Slayer,"Once per game, during the town meeting, attempt to kill another player; they die if they’re the demon",Town,
 Soldier,Cannot be killed by the demon at night,Town,
 Tea Lady,"If both of your living neighbors are good, neither can die",Town,
-Town Crier,"Nightly, learn if the minion nominated someone that day",Town,
-Undertaker,"Nightly, learn which role died by execution",Town,
 Virgin,"If the first person to nominate you is good, they are instantly executed",Town,
 Washerwoman,Start knowing 1 of 2 people is a specific town,Town,
 Butler,"Each night, choose a player to be your master. You cannot vote in favor of an execution unless your master does",Outsider,
 Drunk,"You think you are a specific town role that is not in play, but your ability doesn’t work",Outsider,
-Gangster,"If you and a neighbor agree to kill your other neighbor, and tell the storyteller in town square during discussion time, that agreed-upon other neighbor will die during the night. If the Gangster gets both to agree to kill the other, they choose which will actually die at night",Outsider,\*
 Golem,"You may only nominate once. When you do so, if the player you nominated isnt the demon, they instantly die",Outsider,\*
 Heretic,"Whichever side wins, loses, and vice-versa. This effect persists even once you die",Outsider,\*\*
-Husk,"You do not count as a living player, and cannot die. Your vote does not count. ",Outsider,\*
 Lunatic,You think you are a specific demon; the actual demon knows who you choose to try to kill,Outsider,
-Moleman,"Each night, choose three living players (before anyone dies that night). If one is executed the following day, one of the other two, if alive, will be instead",Outsider,\*
 Ogre,"On the first night, pick a player. You are their alignment for the rest of the game, but are not told what that alignment is",Outsider,\*
-Politician,"If you are the most influential in good losing, become and win with evil",Outsider,\*\*
 Recluse,"May register as some manner of evil to other role abilities, even after dying",Outsider,
 Saint,"If you’re executed by the town, evil wins",Outsider,
 Sweetheart,"When you die, a player becomes a drunk for the rest of the game",Outsider,
-Voudon,"Once there are two or more dead players, the following effects occur: Ghost votes become unlimited, only the voudon and dead players may vote, and the 'marked for execution' threshold becomes 1. Once killed, all three effects are undone and you do not recieve a ghost vote",Outsider,\*\*
-Yes Man,"In town square, you must always agree with what other players say or you will be executed immediately ",Outsider,\*
-Apopsis,"Start telling the Storyteller a secret phrase. The first time you say this phrase to the storyteller, if there are 4 or more living players, the day will end within 10 seconds.",Minion,\*
 Assassin,"Once per game, at night, choose a player to die. This bypasses defensive abilities",Minion,
 Baron,+2 Outsiders,Minion,
 Boffin,"While alive, your demon has a specific good role ability; you both know which",Minion,
-Boomdandy,"When you are executed, all but three people die. A second execution may happen that day after 2 minutes of town discussion, with each voting period beginning immediately.",Minion,\*\*
-Cerenovus,"Nightly, choose a player to be mad that they are a specific good role from the current script until the next night, or else they will be executed",Minion,\*
 Evil Twin,"Start knowing a specific town and their role. They know that you are their Evil Twin. If the town twin is executed, evil wins. Good cannot win while both are alive",Minion,\*
 Goblin,"If you publicly announce that they are the goblin for the first time once nominated, and are executed that day, evil wins",Minion,\*
 Marionette,"You think you are a specific town or outsider role that is not in play, but your ability doesn’t work and you’re actually a minion. You will always neighbor the demon",Minion,
@@ -72,25 +50,13 @@ Poisoner,"Nightly, poison 1 player until the next night begins",Minion,
 Scarlet Woman,"If the demon dies when there are 5 or more people alive, you become the demon",Minion,
 Summoner,"You gain 3 bluffs. On night 2, turn a player of your choice into a demon of your choice from the active script who acts immediately. There is no demon at the start of the game.",Minion,\*
 Spy,"Nightly, learn either one specified player's role or two random player's roles. You may appear as good to role abilities.",Minion,
-Vampire Spawn,"Vampire Spawn can only be created mid-game by a vampire. Once per game, you may select a player and poison them for 2 days. The target is informed that they were poisoned.",Minion,\*
 Witch,"Nightly, choose a player. If they nominate someone, they die. This ability is disabled the moment 3 or less people remain alive",Minion,
-Wizard,"Once per game, at any time, declare a wish to the storyteller. The wish can be any request, but most come with a cost and leave a hint as to their nature.",Minion,\*\*\*
-Agonyxolotl," +1 minion. The Agonyxolotl is not a player, but must instead be babysat (held in the inventory) by a living minion. Each night, all minions wake and decide who will babysit Agonyxolotl, acting as demon for the day. If the present babysitter dies, evil loses. Nightly, someone will die. Whether the babysitter is drunk or poisoned does not affect the Agonyxolotl",Demon,\*
-Alastor,"Each night, select a living player to die. Start the game knowing one good player is marked as your target. You may not kill your target directly, but once they die you can select an additional living player to die each night.",Demon,\*
-Asmodeus,"Start the game with one specific good player as your 'Beloved'. You cannot die until your Beloved does. Each night, choose one or both of your Beloved's living neighbors to die, unless your Beloved died that day. Once your Beloved dies, your kills are random.",Demon,\*\*
 Fang Gu,"Nightly, choose a living player to die. The first time per game an outsider is killed like this, the original Fang Gu dies and the targeted outsider becomes the new Fang Gu. +1 Outsider instead of town",Demon,
 Freddy,"All players are told that Freddy is free. After 5 nights, evil wins. If more than 1 good player is executed, evil wins. Freddy does not kill any players during the night",Demon,\*\*
-Grometheus,"Each night, you may select up to as many people as good-initiated nominations were made that day to die. Each night, pick a living player. That player must nominate someone the following day, or they will be executed.",Demon,\*
-Heath'lami,"Each night, select a location somewhere in town to plant a mine. Mines persist for the rest of the game, and are only visible to evil players. When a player steps on a mine, they immediately die",Demon,\*
 Imp,"Nightly, choose a living player to die. If you kill yourself like this, your minion becomes an Imp",Demon,
-Kira,"Each night, you may choose to guess as many player's roles as you wish. If all of the guessed roles are correct, all of those players will die. If less than 3 people would be left alive after a multikill, no players die.",Demon,\*\*
 Legion,"There are 5 players of Legion, who all know each other, but none recieve bluffs. Executions fail if only evil players voted. Members of legion may appear as demons or minions to role abilities. Each night, someone will die. There are no minions or outsiders.",Demon,\*\*
-Lleech,"Nightly, choose a living player to die. Start by selecting a player. That player is permanently poisoned, and you can not die until they do.",Demon,\*\*
 Ojo,"Nightly, choose a role. If a player with that role exists, they die. If nobody has the role, the storyteller decides who dies",Demon,
-Patmos,"You have 4 abilities; you must choose one to activate each night: Death, War, Pestilence, Famine. Once all have been used, it is announced that evil wins at the end of the following day. *Death*: Choose 2 living players to die, this may only be used once. *War*: The following day, only one vote is required to mark for execution. A tie on that day executes all tied players. *Pestilence*: Poison all good players until the start of the next night. *Famine*: Private discussion is reduced to 3 minutes, there is no extra town discussion time after a nomination.",Demon,\*\*
 Prisdelo,"Nightly, choose 3 living players. Each is informed that they have been selected. Each must individually choose whether to live or die. If all choose to live, all die",Demon,\*
-Showman,"Nightly, choose a living player to die. There can be multiple of the same role. You do not get a bluff list. +/- 1 Outsider.",Demon,\*\*
 Springtrap,"Nightly, if nobody died today, choose a living player to die. When you die, you feign death and “Come Back” to life once, while still appearing as dead (dead players can still be nominated!)",Demon,\*
-Vampire,"Start with no minions. Nightly, choose a living player to die. The first two players selected are turned evil and converted into vampire spawn instead of dying, and are told who you are.",Demon,\*
 Vigormortis,"Nightly, choose a living player to die. If you kill your minion, they retain their ability and permanently poison an adjacent town. -1 Outsider",Demon,
 Yaggababble,"When the game begins, you are informed of a secret phrase. Any time you publicly say the phrase, a player may die that night, up to a maximum of 3 (diminishing returns after first time spoken)",Demon,\*\*

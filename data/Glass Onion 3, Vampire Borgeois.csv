@@ -1,0 +1,29 @@
+Role,Description,Alignment,Difficulty
+Artist,"Privately, during the day, you may return home to ask the storyteller any one yes or no question",Town,
+Bodyguard,"Once per game, choose a player. For the rest of the game, if they would die, you die instead.",Town,
+Bounty Hunter,"Start knowing 1 evil player. If they die, learn a different evil player that night. +1 Minion, -1 Town",Town,\*\*
+Cannibal,"Gain the ability of the last executed person. If they were evil, you are poisoned until a good player is executed",Town,
+Dreamer,"Nightly, choose a player. You learn 1 good and 1 evil role they might be, one of which is correct",Town,
+Empath,Nightly learn how many of your 2 closest neighbors are evil,Town,
+Fisherman,"Once per game, you may go home during discussion to ask the storyteller for a founded piece of advice to help good win",Town,\*\*
+Fool,"First time you die, don’t",Town,
+Investigator,Start knowing 1 of 2 people is a specific minion,Town,
+Lycanthrope,"At night, choose 1 living player. If they are innocent, they die, but the demon can't kill anyone else that night",Town,\*
+Magician,"The minion is told that either you or the demon is their demon, and the demon is told that either you or the minion is their minion",Town,\*
+Phantom,Your ghost vote can be used up to 3 times instead of once,Town,
+Seamstress,"Once per game, you may check if 2 people are on same team at night",Town,
+Drunk,"You think you are a specific town role that is not in play, but your ability doesn’t work",Outsider,
+Moleman,"Each night, choose three living players (before anyone dies that night). If one is executed the following day, one of the other two, if alive, will be instead",Outsider,\*
+Ogre,"On the first night, pick a player. You are their alignment for the rest of the game, but are not told what that alignment is",Outsider,\*
+Recluse,"May register as some manner of evil to other role abilities, even after dying",Outsider,
+Sweetheart,"When you die, a player becomes a drunk for the rest of the game",Outsider,
+Evil Twin,"Start knowing a specific town and their role. They know that you are their Evil Twin. If the town twin is executed, evil wins. Good cannot win while both are alive",Minion,\*
+Marionette,"You think you are a specific town or outsider role that is not in play, but your ability doesn’t work and you’re actually a minion. You will always neighbor the demon",Minion,
+Mastermind,"If the demon is executed, continue for another day. If a good player is executed after the demon, evil win",Minion,\*\*
+Mezepheles,"Start knowing a secret word. The first good player who says the secret word to the storyteller at any time, public or private, turns evil that night. The Mezepheles does not learn if someone has been converted, but the converted player does",Minion,\*
+Summoner,"You gain 3 bluffs. On night 2, turn a player of your choice into a demon of your choice from the active script who acts immediately. There is no demon at the start of the game.",Minion,\*
+Vampire Spawn,"Vampire Spawn can only be created mid-game by a vampire. Once per game, you may select a player and poison them for 2 days. The target is informed that they were poisoned.",Minion,\*
+Agonyxolotl," +1 minion. The Agonyxolotl is not a player, but must instead be babysat (held in the inventory) by a living minion. Each night, all minions wake and decide who will babysit Agonyxolotl, acting as demon for the day. If the present babysitter dies, evil loses. Nightly, someone will die. Whether the babysitter is drunk or poisoned does not affect the Agonyxolotl",Demon,\*
+Grometheus,"Each night, you may select up to as many people as good-initiated nominations were made that day to die. Each night, pick a living player. That player must nominate someone the following day, or they will be executed.",Demon,\*
+Springtrap,"Nightly, if nobody died today, choose a living player to die. When you die, you feign death and “Come Back” to life once, while still appearing as dead (dead players can still be nominated!)",Demon,\*
+Vampire,"Start with no minions. Nightly, choose a living player to die. The first two players selected are turned evil and converted into vampire spawn instead of dying, and are told who you are.",Demon,\*

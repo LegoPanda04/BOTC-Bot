@@ -6,6 +6,10 @@ import glob
 
 """
 TODO:
+Kidnap: Move people with tags to town square
+Breakout: Move people to house channels (lower priority)
+Move: Force pinged user into listed vc (general solution?)
+
 Add private messaging capabilities.
 
 Lynn Ideas:
@@ -14,8 +18,6 @@ Bingo bob cannot kill and evil wins if the board is done. This is a freddy type 
 Everyone can see the blank version of the bingo role which updates nightly. 
 Everyone will also have a list of possible points (30-35).
 
-Ash Ideas:
-Vampire (Demon) There is no minion. The first two people you kill become evil, and know they are evil.
 ???
 """
 
@@ -114,7 +116,7 @@ async def outline(ctx):
         await ctx.send(message)
 
 @bot.command(
-    help="Make a new script.\nThe script name is case sensitive, role names are not.\nExample syntax: $new \"New Script\" \"artist\" \"drunk\" \"poisoner\" \"imp\" \"scarlet woman\"",
+    help="Make a new script.\nThe script name is case sensitive, role names are not.\nExample syntax: $new \"New Script\" artist drunk poisoner imp \"scarlet woman\"",
     brief="Makes a new script."
 )
 async def new(ctx, script, *args):
@@ -131,7 +133,7 @@ async def new(ctx, script, *args):
         await ctx.send(f"Created new script: {script_name}")
 
 @bot.command(
-    help="Edits an existing script.\nThe script name is case sensitive, role names are not.\nListing a role in the script will remove it, listing a role not in the script will add it\nExample syntax: $edit \"prisdelo\" \"scarlet woman\"",
+    help="Edits an existing script.\nThe script name is case sensitive, role names are not.\nListing a role in the script will remove it, listing a role not in the script will add it\nExample syntax: $edit prisdelo \"scarlet woman\"",
     brief="Edits an existing script."
 )
 async def edit(ctx, *args):
@@ -151,6 +153,27 @@ async def edit(ctx, *args):
                 current_roles.append(arg)
         # Generate script file
         working_script = roles[roles['Role'].isin(current_roles)]
+        working_script.to_csv(f"./data/{script_name}.csv", index=False, header=True)
+        await ctx.send(f"Updated script: {script_name}")
+
+@bot.command(
+    help="Updates the script with the current descriptions.",
+    brief="Updates the script with the current descriptions."
+)
+async def update(ctx):
+    global working_script
+    if not is_whitelisted(ctx.author.id):
+        await ctx.send("Sorry, but you are not allowed to use this command.")
+    elif script_name == "Roles":
+        await ctx.send("Sorry, but you can not modify the master role list!")
+    else:
+        list_roles = []
+        for role in roles['Role']:
+            if role in list(working_script['Role']):
+                list_roles.append(True)
+            else:
+                list_roles.append(False)
+        working_script = roles[list_roles]
         working_script.to_csv(f"./data/{script_name}.csv", index=False, header=True)
         await ctx.send(f"Updated script: {script_name}")
 

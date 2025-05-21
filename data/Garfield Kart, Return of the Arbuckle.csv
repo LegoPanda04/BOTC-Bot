@@ -1,0 +1,30 @@
+Role,Description,Alignment,Difficulty
+Cannibal,"Gain the ability of the last executed person. If they were evil, you are poisoned until a good player is executed",Town,
+Dreamer,"Nightly, choose a player. You learn 1 good and 1 evil role they might be, one of which is correct",Town,
+Empath,Nightly learn how many of your 2 closest neighbors are evil,Town,
+Flower Girl,"Nightly, learn if the demon voted that day",Town,
+Fool,"First time you die, don’t",Town,
+Grandmother,Start knowing 1 person is a specific good role; if they die from the demon you die too,Town,
+Librarian,Start knowing 1 of 2 people is a specific outsider,Town,
+Lycanthrope,"At night, choose 1 living player. If they are innocent, they die, but the demon can't kill anyone else that night",Town,\*
+Monk,"Nightly, choose someone to protect from the demon",Town,
+Nightwatchmen,"Once per game, at night, one chosen player learns that you are the nightwatchmen",Town,
+Noble,"Start with a list of 2 good players and 1 evil, you don't know which is which",Town,
+Prophet,"If a team has not yet won 3 days after your death, you return to life and cannot be killed again by the same method",Town,
+Ravenkeeper,"If you die during the night, choose a player to learn the role of",Town,
+Sailor,"You can't die. Nightly, choose a living player, who is told they were visited by the Sailor. You or they are drunk until the start of the next night",Town,\*
+Soldier,Cannot be killed by the demon at night,Town,
+Tea Lady,"If both of your living neighbors are good, neither can die",Town,
+Drunk,"You think you are a specific town role that is not in play, but your ability doesn’t work",Outsider,
+Moleman,"Each night, choose three living players (before anyone dies that night). If one is executed the following day, one of the other two, if alive, will be instead",Outsider,\*
+Ogre,"On the first night, pick a player. You are their alignment for the rest of the game, but are not told what that alignment is",Outsider,\*
+Sweetheart,"When you die, a player becomes a drunk for the rest of the game",Outsider,
+Boffin,"While alive, your demon has a specific good role ability; you both know which",Minion,
+Marionette,"You think you are a specific town or outsider role that is not in play, but your ability doesn’t work and you’re actually a minion. You will always neighbor the demon",Minion,
+Mezepheles,"Start knowing a secret word. The first good player who says the secret word to the storyteller at any time, public or private, turns evil that night. The Mezepheles does not learn if someone has been converted, but the converted player does",Minion,\*
+Poisoner,"Nightly, poison 1 player until the next night begins",Minion,
+Summoner,"You gain 3 bluffs. On night 2, turn a player of your choice into a demon of your choice from the active script who acts immediately. There is no demon at the start of the game.",Minion,\*
+Imp,"Nightly, choose a living player to die. If you kill yourself like this, your minion becomes an Imp",Demon,
+Ojo,"Nightly, choose a role. If a player with that role exists, they die. If nobody has the role, the storyteller decides who dies",Demon,
+Prisdelo,"Nightly, choose 3 living players. Each is informed that they have been selected. Each must individually choose whether to live or die. If all choose to live, all die",Demon,\*
+Springtrap,"Nightly, if nobody died today, choose a living player to die. When you die, you feign death and “Come Back” to life once, while still appearing as dead (dead players can still be nominated!)",Demon,\*

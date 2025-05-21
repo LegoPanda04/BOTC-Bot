@@ -1,0 +1,28 @@
+Role,Description,Alignment,Difficulty
+Alchemist,You have a specified minion ability from the active script that is not in play.,Town,\*\*
+Ferryman,"If you are alive in the final 3, you can refresh all ghost votes once",Town,\*
+Fortune Teller,"Nightly, check 2 people and learn if the demon is among them. 1 person in the game will register as a red herring",Town,
+Gambler,"Nightly, you may choose to guess someone’s role. If you are wrong, you die",Town,
+Gossip,"Each day, you may publicly declare a rumor. If the rumor is true, someone will die during the night",Town,\*
+Grandmother,Start knowing 1 person is a specific good role; if they die from the demon you die too,Town,
+Nightwatchmen,"Once per game, at night, one chosen player learns that you are the nightwatchmen",Town,
+Oracle,"Nightly, learn how many dead people are evil",Town,
+Phantom,Your ghost vote can be used up to 3 times instead of once,Town,
+Prophet,"If a team has not yet won 3 days after your death, you return to life and cannot be killed again by the same method",Town,
+Ravenkeeper,"If you die during the night, choose a player to learn the role of",Town,
+Seductress,"Start choosing one player. If you would die, they do instead. The chosen player learns that they were ""seduced"", but not by who.",Town,\*
+Slayer,"Once per game, during the town meeting, attempt to kill another player; they die if they’re the demon",Town,
+Undertaker,"Nightly, learn which role died by execution",Town,
+Drunk,"You think you are a specific town role that is not in play, but your ability doesn’t work",Outsider,
+Politician,"If you are the most influential in good losing, become and win with evil",Outsider,\*\*
+Recluse,"May register as some manner of evil to other role abilities, even after dying",Outsider,
+Saint,"If you’re executed by the town, evil wins",Outsider,
+Voudon,"Once there are two or more dead players, the following effects occur: Ghost votes become unlimited, only the voudon and dead players may vote, and the 'marked for execution' threshold becomes 1. Once killed, all three effects are undone and you do not recieve a ghost vote",Outsider,\*\*
+Assassin,"Once per game, at night, choose a player to die. This bypasses defensive abilities",Minion,
+Boffin,"While alive, your demon has a specific good role ability; you both know which",Minion,
+Marionette,"You think you are a specific town or outsider role that is not in play, but your ability doesn’t work and you’re actually a minion. You will always neighbor the demon",Minion,
+Scarlet Woman,"If the demon dies when there are 5 or more people alive, you become the demon",Minion,
+Alastor,"Each night, select a living player to die. Start the game knowing one good player is marked as your target. You may not kill your target directly, but once they die you can select an additional living player to die each night.",Demon,\*
+Fang Gu,"Nightly, choose a living player to die. The first time per game an outsider is killed like this, the original Fang Gu dies and the targeted outsider becomes the new Fang Gu. +1 Outsider instead of town",Demon,
+Legion,"There are 5 players of Legion, who all know each other, but none recieve bluffs. Executions fail if only evil players voted. Members of legion may appear as demons or minions to role abilities. Each night, someone will die. There are no minions or outsiders.",Demon,\*\*
+Yaggababble,"When the game begins, you are informed of a secret phrase. Any time you publicly say the phrase, a player may die that night, up to a maximum of 3 (diminishing returns after first time spoken)",Demon,\*\*
